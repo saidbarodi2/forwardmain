@@ -329,8 +329,7 @@ async def show_data(_: Client, message: Message):
         f"**الاسطر التي يتم حذفها:**\n{data.get('lines_to_remove_starting_with', [])}\n\n"
         f"**جمل يتم استبدالها:**\n{data.get('sentence_replacements', {})}\n\n"
         f"**اسطر يتم استبدالها:**\n{data.get('line_replacements', {})}\n\n"
-        f"**كلمات الفلترة :**\n{data.get('ignored_words', [])}\n\n"
-    )
+ 
     await message.reply(data_message)
 
 
